@@ -77,19 +77,6 @@ export default {
 
               </ul>
 
-              
-
-              
-
-              
-
-              
-
-              
-
-              
-
-
             </div>
 
           </div>
