@@ -37,25 +37,30 @@ export default {
 </script>
 
 <template>
-  <div class="info-container text-center d-md-flex px-5 my-5">
-    <div class="align-self-center">
-      <div v-for="(feature, index) in featuresOne" :key="index">
-        <h3>{{ feature.title }}</h3>
-        <p>{{ feature.description }}</p>
-      </div>
-    </div>
+    <section id="list-item-2">
 
-    <div class="w-100 align-self-center px-4">
-      <img src="../../../imgs/invisible.png" class="w-100 " alt="duck">
-    </div>
+        <div class="info-container text-center d-md-flex px-5 my-5">
+            <div class="align-self-center">
+            <div v-for="(feature, index) in featuresOne" :key="index">
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+            </div>
+            </div>
 
-    <div class="align-self-center">
-      <div v-for="(feature, index) in featuresTwo" :key="index">
-        <h3>{{ feature.title }}</h3>
-        <p>{{ feature.description }}</p>
-      </div>
-    </div>
-  </div>
+            <div class="w-100 align-self-center px-4">
+            <img src="../../../imgs/invisible.png" class="w-100 " alt="duck">
+            </div>
+
+            <div class="align-self-center">
+            <div v-for="(feature, index) in featuresTwo" :key="index">
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+            </div>
+            </div>
+        </div>
+        
+    </section>
+  
 </template>
 
 <style lang="scss" scoped>

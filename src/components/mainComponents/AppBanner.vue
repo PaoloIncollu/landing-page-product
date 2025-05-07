@@ -9,20 +9,21 @@ export default {
 </script>
 
 <template>
-     <div class="banner-container d-md-flex mb-5">
+    <section id="list-item-1">
+        <div class="banner-container d-md-flex mb-5">
             
             <div class="banner-img col-md-6">
-
+    
                 <img src="../../../imgs/banner-image.png" class="w-100 h-100" alt="">
-
+    
             </div>
-
+    
             <div class="banner-bg col-md-6 text-center p-5 d-flex flex-column justify-content-center">
-
+    
                 <h1 class="fw-bold">
                     Rubber Duck Debuggings
                 </h1>
-
+    
                 <p>
                     Spiegare il codice a una paperella di gomma aiuta programmatori a chiarire il pensiero e individuare errori nascosti
                 </p>
@@ -30,10 +31,11 @@ export default {
                 <button class="btn btn-outline-dark fw-bold">
                     AQUISTALA SUBITO!
                 </button>
-
+    
             </div>
-
+    
         </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

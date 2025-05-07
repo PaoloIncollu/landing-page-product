@@ -26,33 +26,37 @@ export default {
 </script>
 
 <template>
-  <div class="mb-5 px-5 d-md-flex">
-    <div class="pt-5 pb-sm-4">
-      <img src="../../../imgs/single-image2.png" class="img-fluid" alt="">
-    </div>
-    <div class="ps-md-3">
-      <h2>FAQs</h2>
-      <div class="accordion" id="accordionExample">
-        <!-- Ciclo v-for per generare le accordion items -->
-        <div v-for="(faq, index) in faqs" :key="index" class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed d-flex justify-content-between align-items-center fw-bold" type="button" :data-bs-toggle="'collapse'" :data-bs-target="'#collapse' + index" aria-expanded="false" :aria-controls="'collapse' + index">
-              {{ faq.question }}
-              <span class="toggle-icon ms-auto"></span>
-            </button>
-          </h2>
-          <div :id="'collapse' + index" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              {{ faq.answer }}
-            </div>
-          </div>
+  <section id="list-item-5">
+    <div class="mb-5 px-5 d-md-flex">
+        <div class="pt-5 pb-sm-4">
+        <img src="../../../imgs/single-image2.png" class="img-fluid" alt="">
         </div>
-      </div>
+        <div class="ps-md-3">
+        <h2>FAQs</h2>
+        <div class="accordion" id="accordionExample">
+            <!-- Ciclo v-for per generare le accordion items -->
+            <div v-for="(faq, index) in faqs" :key="index" class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-flex justify-content-between align-items-center fw-bold" type="button" :data-bs-toggle="'collapse'" :data-bs-target="'#collapse' + index" aria-expanded="false" :aria-controls="'collapse' + index">
+                {{ faq.question }}
+                <span class="toggle-icon ms-auto"></span>
+                </button>
+            </h2>
+            <div :id="'collapse' + index" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                {{ faq.answer }}
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
+
+
 
   /* Rimuove la freccia predefinita di Bootstrap */
   .accordion-button::after {

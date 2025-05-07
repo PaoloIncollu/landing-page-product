@@ -52,7 +52,8 @@ export default {
 </script>
 
 <template>
-  <div class="reviews-container text-center my-5 px-5">
+    <section id="list-item-3">
+        <div class="reviews-container text-center my-5 px-5">
             <h2 class="fw-bold py-5">
                 Cosa ne pensano i nostri sviluppatori
             </h2>
@@ -97,6 +98,7 @@ export default {
                 </button>
             </div>
         </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
