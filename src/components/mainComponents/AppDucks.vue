@@ -29,7 +29,7 @@ export default {
 
 <template>
     <section id="list-item-4">
-        <div class="ducks-container text-center">
+        <div class="ducks-container text-center pt-4">
             <h2>
             La collezione di paperelle
             </h2>
@@ -55,6 +55,8 @@ export default {
 
 <style lang="scss" scoped>
     .ducks-container {
+
+        background-color: #d2d2d2;
     h2 {
         font-size: 50px;
     }
