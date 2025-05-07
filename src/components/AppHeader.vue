@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <header class="position-fixed top-0 start-0 w-100">
+  <header class="position-fixed z-3 top-0 start-0 w-100">
     <div class="d-flex justify-content-between  px-2 py-3">
 
       <!-- Logo -->
@@ -30,7 +30,7 @@ export default {
       <div class="d-none d-lg-block align-self-center">
         <ul class="list-group list-group-horizontal gap-3 mb-0">
           <li><a class="list-group-item list-group-item-action border-0" href="../../index.html">Home</a></li>
-          <li><a class="list-group-item list-group-item-action border-0" href="#list-item-2">I punti di forza</a></li>
+          <li><a class="list-group-item list-group-item-action border-0" href="./mainComponents/AppInfo.vue">I punti di forza</a></li>
           <li><a class="list-group-item list-group-item-action border-0" href="#list-item-3">Recensioni</a></li>
           <li><a class="list-group-item list-group-item-action border-0" href="#list-item-4">Paperelle</a></li>
           <li><a class="list-group-item list-group-item-action border-0" href="#list-item-5">FAQs</a></li>
